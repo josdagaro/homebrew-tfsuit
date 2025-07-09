@@ -10,7 +10,7 @@ class Tfsuit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/josdagaro/tfsuit/releases/download/v1.0.0/tfsuit_1.0.0_darwin_amd64.tar.gz"
-      sha256 "904bcf350ab5155344ebe960509b1fa1d957478164fe0712337a45253ab64505"
+      sha256 "f34c4e3931b23490a3fb770b295247110aac31a5c43925df85544e7ce5926e48"
 
       def install
         bin.install "tfsuit"
@@ -18,7 +18,7 @@ class Tfsuit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/josdagaro/tfsuit/releases/download/v1.0.0/tfsuit_1.0.0_darwin_arm64.tar.gz"
-      sha256 "43603e38d93b3f064cd1aad7784c07cda64a0236e0ddac7dc51c159a0ab0f9b2"
+      sha256 "3921b4c1ee3ec3204371ce187df372478189cd5b65f828c4aba01849a2943cf7"
 
       def install
         bin.install "tfsuit"
@@ -29,14 +29,14 @@ class Tfsuit < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/josdagaro/tfsuit/releases/download/v1.0.0/tfsuit_1.0.0_linux_amd64.tar.gz"
-      sha256 "ca2ea57ac70cbe72015d467de2620ac0c1699d68c5b63ec07fef066931a49d63"
+      sha256 "70f69a78bb37bef3cf359520a30745134d91c20466d452e28b94dba8a20a8c8a"
       def install
         bin.install "tfsuit"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/josdagaro/tfsuit/releases/download/v1.0.0/tfsuit_1.0.0_linux_arm64.tar.gz"
-      sha256 "d2e7649559275fbb9708fdfddf01328d4fd428c19215477dcb003c416e7baa91"
+      sha256 "cbb744713c3ecc3f525741c73a3a13ca8d7f0f47716d0730cc93ec95ae21f239"
       def install
         bin.install "tfsuit"
       end
