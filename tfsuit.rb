@@ -5,20 +5,20 @@
 class Tfsuit < Formula
   desc "Fast, opinionated Terraform naming linter & fixer"
   homepage "https://github.com/josdagaro/tfsuit"
-  version "1.3.9"
+  version "1.3.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.9/tfsuit_1.3.9_darwin_amd64.tar.gz"
-      sha256 "d29c131c2aca4b74beeff4f491c1b2c08b591690162505af19828591f45612fd"
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_darwin_amd64.tar.gz"
+      sha256 "0ef05cf0367dd0790fa80b0c63c406b08b7eb912ce84c0dfa1288478f87b205c"
 
       def install
         bin.install "tfsuit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.9/tfsuit_1.3.9_darwin_arm64.tar.gz"
-      sha256 "9e260c8aab71e6e36ce5e67005a0f1b05835d1917ed4ae6db0f771e1126513d2"
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_darwin_arm64.tar.gz"
+      sha256 "60f538d1a436df38e436d66906e7b1952e2ad4f4f0e6e23a21eff5874c345760"
 
       def install
         bin.install "tfsuit"
@@ -27,16 +27,16 @@ class Tfsuit < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.9/tfsuit_1.3.9_linux_amd64.tar.gz"
-      sha256 "0621dc8232cce00b51fa1a509a96db8e6d42f9e62ae71fed5fa54ab8748105be"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_linux_amd64.tar.gz"
+      sha256 "f4db6959ffbc37f3c4d92becdedd741291f19e060333567c38c0abe26317e6e8"
       def install
         bin.install "tfsuit"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.9/tfsuit_1.3.9_linux_arm64.tar.gz"
-      sha256 "b70264ce24f03c8b795324ab939172128fc81e5302a1c1685d67498e971033c8"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_linux_arm64.tar.gz"
+      sha256 "48ada4a0aa509bace6a3f7099ee8d82a093cd9bd07416d4deba297b038da19e3"
       def install
         bin.install "tfsuit"
       end
