@@ -5,20 +5,20 @@
 class Tfsuit < Formula
   desc "Fast, opinionated Terraform naming linter & fixer"
   homepage "https://github.com/josdagaro/tfsuit"
-  version "1.3.10"
+  version "1.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_darwin_amd64.tar.gz"
-      sha256 "0ef05cf0367dd0790fa80b0c63c406b08b7eb912ce84c0dfa1288478f87b205c"
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.4.0/tfsuit_1.4.0_darwin_amd64.tar.gz"
+      sha256 "16077949a87a0d8f3dad9cea6359e6aae40b9f573f5d1386da9c1864a2706ace"
 
       def install
         bin.install "tfsuit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_darwin_arm64.tar.gz"
-      sha256 "60f538d1a436df38e436d66906e7b1952e2ad4f4f0e6e23a21eff5874c345760"
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.4.0/tfsuit_1.4.0_darwin_arm64.tar.gz"
+      sha256 "e320bcae14f866dbe3e9874c014cc5684fef041d963b861b0ca22d4e0dedc290"
 
       def install
         bin.install "tfsuit"
@@ -28,15 +28,15 @@ class Tfsuit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_linux_amd64.tar.gz"
-      sha256 "f4db6959ffbc37f3c4d92becdedd741291f19e060333567c38c0abe26317e6e8"
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.4.0/tfsuit_1.4.0_linux_amd64.tar.gz"
+      sha256 "b00d165f1c161bb3ce3d8e2926337b3da57fa190e5b86a927ae55ba54b9cfbf8"
       def install
         bin.install "tfsuit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josdagaro/tfsuit/releases/download/v1.3.10/tfsuit_1.3.10_linux_arm64.tar.gz"
-      sha256 "48ada4a0aa509bace6a3f7099ee8d82a093cd9bd07416d4deba297b038da19e3"
+      url "https://github.com/josdagaro/tfsuit/releases/download/v1.4.0/tfsuit_1.4.0_linux_arm64.tar.gz"
+      sha256 "d0d4532e2bdc3bf87bb07ef11c24e8ce22fc7f4223efa3b957d5b6b230029e6d"
       def install
         bin.install "tfsuit"
       end
